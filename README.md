@@ -23,7 +23,7 @@ Aplicação de análise de anúncios de veículos usados com Python, Pandas, Plo
 1. Clonar: git clone https://github.com/teofiloaa/Tripleten.git
 2. Entrar: cd Tripleten
 3. Criar ambiente: python -m venv .venv
-4. Ativar ambiente: no Windows, .venv\\Scripts\\Activate.ps1; no macOS/Linux, source .venv/bin/activate
+4. Ativar ambiente: no Windows, .venv\Scripts\Activate.ps1; no macOS/Linux, source .venv/bin/activate
 5. Instalar: pip install -r requirements.txt
 6. Se necessário, obter dados: python scripts/download_data.py
 7. Executar: streamlit run app.py
@@ -43,7 +43,8 @@ O CSV é obtido preferencialmente do [ficheiro fornecido pela TripleTen](https:/
 ## Critérios de aprovação
 - [x] README, app.py, notebooks/EDA.ipynb, requirements.txt e configuração Streamlit.
 - [x] Cabeçalho, histograma, gráfico de dispersão e caixas de seleção.
-- [ ] Confirmar o ficheiro vehicles_us.csv versionado.
+- [x] Testes automáticos de dados, notebook e dashboard concluídos com sucesso no GitHub Actions.
+- [x] Ficheiro vehicles_us.csv descarregado, validado e versionado.
 - [ ] Confirmar que a aplicação está acessível no Render.
 - [ ] Acrescentar a URL pública e enviar link do GitHub para avaliação.
 
