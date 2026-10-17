@@ -1,0 +1,29 @@
+name: Descarregar dataset TripleTen
+
+on:
+  push:
+    branches: [sprint-5-dashboard]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dataset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Obter CSV original
+        run: python scripts/download_data.py
+      - name: Guardar CSV no GitHub
+        run: |
+          if ! git ls-files --error-unmatch vehicles_us.csv >/dev/null 2>&1; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add vehicles_us.csv
+            git commit -m "data: adicionar dataset do Sprint 5"
+            git push
+          fi
