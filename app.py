@@ -51,7 +51,7 @@ if show_histogram:
         labels={"odometer": "Quilometragem (milhas)"},
     )
     fig_hist.update_layout(yaxis_title="Número de anúncios")
-    st.plotly_chart(fig_hist, use_container_width=True)
+    st.plotly_chart(fig_hist, width="stretch")
 
 if show_scatter:
     fig_scatter = px.scatter(
@@ -64,9 +64,9 @@ if show_scatter:
             "condition": "Estado",
         },
     )
-    st.plotly_chart(fig_scatter, use_container_width=True)
+    st.plotly_chart(fig_scatter, width="stretch")
 
 with st.expander("Pré-visualizar os dados"):
-    st.dataframe(filtered.head(100), use_container_width=True)
+    st.dataframe(filtered.head(100), width="stretch")
 
 st.caption("Fonte: anúncios de veículos do Sprint 5 da TripleTen; preços em USD e quilometragem em milhas.")
