@@ -2,7 +2,9 @@
 
 Dashboard de anúncios de veículos desenvolvido com Python, pandas, Plotly Express e Streamlit. Permite explorar a distribuição do odômetro e a relação entre distância percorrida e preço anunciado.
 
-**Estado da publicação:** código e configuração preparados; publicação no Render ainda não confirmada. A URL real do aplicativo deve ser adicionada aqui após o deploy bem-sucedido. Não enviar para revisão antes de validar o aplicativo público.
+**Aplicativo publicado:** https://tripleten-sprint5-autoscope.onrender.com/
+
+Deploy confirmado como **Live** pelo Render em 28/10/2026, no plano gratuito. A instância pode demorar a responder após inatividade.
 
 ## Funcionalidades
 
@@ -69,7 +71,7 @@ Abrir `http://localhost:10000`. No VS Code, selecionar o interpretador de `vehic
 7. Publicar, esperar o estado Live e abrir a URL fornecida pelo Render.
 8. Testar os dois gráficos e as caixas de seleção; adicionar a URL real ao início deste README.
 
-O `render.yaml` também permite configurar o serviço por Blueprint. A publicação ainda depende do acesso à conta Render. O arquivo de configuração por si só não significa que o aplicativo esteja publicado.
+O `render.yaml` também permite configurar o serviço por Blueprint. Este serviço foi publicado pela interface do Render usando os comandos acima.
 
 ## Dados e resultados
 
@@ -89,11 +91,11 @@ O CSV é preservado. Não imputamos zero nos valores ausentes e não removemos e
 python tests/test_app.py
 ```
 
-O teste verifica abertura sem exceções, presença de dois gráficos, alternância das caixas de seleção, todos os tipos de veículo e ajuste dos intervalos. As células do notebook foram executadas sequencialmente com IPython e suas saídas foram gravadas; o kernel Jupyter separado não iniciou neste ambiente por restrição de sockets. A execução no navegador público ainda depende do deploy.
+O teste verifica abertura sem exceções, presença de dois gráficos, alternância das caixas de seleção, todos os tipos de veículo e ajuste dos intervalos. As células do notebook foram executadas sequencialmente com IPython e suas saídas foram gravadas; o kernel Jupyter separado não iniciou neste ambiente por restrição de sockets. O Render confirmou a publicação como Live. A validação interativa da página pública ainda não foi concluída, devido à interrupção da ligação de controle do navegador.
 
 ## Entrega
 
-Após publicar e inserir a URL do Render no README, enviar à TripleTen:
+Link do repositório para entrega à TripleTen, após conferir a página pública:
 
 https://github.com/teofiloaa/Tripleten
 
