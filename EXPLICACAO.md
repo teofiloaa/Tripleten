@@ -62,10 +62,10 @@ O teste com `streamlit.testing.v1.AppTest` confirmou abertura sem exceções, do
 
 Todas as células do notebook foram executadas sequencialmente com IPython, com saídas guardadas no arquivo. O kernel Jupyter separado não iniciou devido à restrição de sockets deste ambiente; isso foi contornado pela execução no mesmo processo, sem inventar resultados.
 
-Ainda é necessário publicar no Render, abrir a URL pública e conferir o comportamento no navegador. O acesso ao Render pelo navegador não foi concluído nesta execução. Portanto, não é correto afirmar que o deploy foi testado ou que o projeto já foi entregue para avaliação.
+O aplicativo foi publicado no plano gratuito do Render em 28/10/2026. O painel confirmou “Deploy succeeded / Live”. URL: https://tripleten-sprint5-autoscope.onrender.com/. Foram configurados Python 3.12.12, instalação por requirements.txt e inicialização com a porta fornecida pelo Render. A verificação interativa da página pública permanece pendente porque a ligação de controle do navegador foi interrompida. O projeto ainda não foi enviado para avaliação.
 
 ## 9. Como explicar o trabalho ao revisor
 
 “Desenvolvi um dashboard em Streamlit usando dados de anúncios de veículos. Fiz uma inspeção inicial no notebook, preservei o CSV e tratei valores ausentes apenas quando necessários aos gráficos. Construí um histograma do odômetro e uma dispersão de preço versus odômetro com Plotly Express. Adicionei caixas de seleção, filtro por tipo e indicadores. Organizei dependências e configuração de hospedagem e testei os controles do aplicativo.”
 
-Só acrescentar que o aplicativo foi publicado e testado no Render depois de concluir essa etapa e verificar a URL real.
+O aplicativo também foi publicado no Render. Distinguir publicação confirmada pelo servidor de testes interativos no navegador público, que ainda precisam ser concluídos.
