@@ -1,0 +1,12 @@
+[server]
+headless = true
+address = "0.0.0.0"
+port = 10000
+
+[browser]
+serverPort = 10000
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#2563eb"
